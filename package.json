@@ -5,7 +5,7 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
-    "test": "node ./node_modules/jest/bin/jest.js --watch --coverage=false --changedSince=origin/master",
+    "test": "node ./node_modules/jest/bin/jest.js --watch --coverage=false --changedSince=master",
     "testDebug": "node ./node_modules/jest/bin/jest.js -o --watch --coverage=false",
     "testFinal": "node ./node_modules/jest/bin/jest.js",
     "updateSnapshots": "node ./node_modules/jest/bin/jest.js -u --coverage=false"
@@ -39,6 +39,7 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
       "**/*.{js,jsx}",
+      "!**.style.{js,jsx}",
       "!**/coverage/**",
       "!**/node_modules/**",
       "!**/web-build/**",
