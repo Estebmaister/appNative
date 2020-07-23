@@ -39,7 +39,7 @@
     "collectCoverage": true,
     "collectCoverageFrom": [
       "**/*.{js,jsx}",
-      "!**.style.{js,jsx}",
+      "!**/*.style.{js,jsx}",
       "!**/coverage/**",
       "!**/node_modules/**",
       "!**/web-build/**",
